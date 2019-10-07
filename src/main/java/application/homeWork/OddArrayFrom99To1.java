@@ -1,5 +1,13 @@
 package application.homeWork;
 
+/*
+Создайте массив из всех нечётных чисел от 1 до 99,
+выведите его на экран в строку,
+а затем этот же массив выведите на экран в другую строку,
+но в обратном порядке (99 97 95 93 … 7 5 3 1).
+ */
+
+
 public class OddArrayFrom99To1 {
     public static void main(String[] args) {
         int size = 0;
