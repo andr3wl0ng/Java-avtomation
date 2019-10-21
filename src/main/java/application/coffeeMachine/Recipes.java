@@ -8,10 +8,8 @@ public class Recipes {
         RecipeComponentBase espresso = new RecipeComponentBase();
         espresso.preparedDrink = espresso.coffee + espresso.water / 2;
 
-
         RecipeComponentBase americano = new RecipeComponentBase();
         americano.preparedDrink = (americano.coffee * 2) + (americano.water * 3);
-
 
         RecipeComponentBase americanoWithMilk = new RecipeComponentBase();
         americanoWithMilk.preparedDrink = (americanoWithMilk.coffee * 2) + (americanoWithMilk.water * 3) + americanoWithMilk.milk;
