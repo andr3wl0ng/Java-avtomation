@@ -5,26 +5,28 @@ public class Recipes {
     public static void main(String[] args) {
 
 
-        Recipy espresso = new Recipy();
-        espresso.coffee = 10;
-        espresso.water = 20;
+        RecipeComponentBase espresso = new RecipeComponentBase();
+        espresso.preparedDrink = espresso.coffee + espresso.water / 2;
 
-        Recipy americano = new Recipy();
-        americano.coffee = 30;
-        americano.water = 40;
 
-        Recipy americanoWithMilk = new Recipy();
-        americanoWithMilk.coffee = 30;
-        americanoWithMilk.water = 40;
-        americanoWithMilk.milk = 20;
+        RecipeComponentBase americano = new RecipeComponentBase();
+        americano.preparedDrink = (americano.coffee * 2) + (americano.water * 3);
+
+
+        RecipeComponentBase americanoWithMilk = new RecipeComponentBase();
+        americanoWithMilk.preparedDrink = (americanoWithMilk.coffee * 2) + (americanoWithMilk.water * 3) + americanoWithMilk.milk;
+
+        RecipeComponentBase doubleEspresso = new RecipeComponentBase();
+        doubleEspresso.preparedDrink = espresso.coffee * 2;
 
     }
 
 }
 
-class Recipy {
-    double coffee;
-    double milk;
-    double sugar;
-    double water;
+class RecipeComponentBase {
+    int coffee = 10;
+    int milk = 10;
+    int water = 10;
+
+    int preparedDrink;
 }
