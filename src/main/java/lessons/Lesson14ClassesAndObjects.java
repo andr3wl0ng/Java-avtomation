@@ -8,8 +8,8 @@ public class Lesson14ClassesAndObjects {
         System.out.println("My name is "+ person1.name +"and my age is" + person1.age);
 
         Person person2 = new Person();
-        person1.name = "Dante";
-        person1.age = 21;
+        person2.name = "Dante";
+        person2.age = 21;
         System.out.println("My name is "+ person2.name +"and my age is" + person2.age);
     }
 }
