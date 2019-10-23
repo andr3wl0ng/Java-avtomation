@@ -32,7 +32,7 @@ public class FileReader {
 
         try {
             BufferedReader reader = new BufferedReader(
-                    new java.io.FileReader("C:\\Users\\Andrew\\Downloads\\test.txt"));
+                    new java.io.FileReader("C:\\Users\\Users\\AndrewDovgiy\\Desktop\\lessonReader.txt"));
             String line;
 
             while ((line = reader.readLine()) != null) {
