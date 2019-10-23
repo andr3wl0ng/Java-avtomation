@@ -13,24 +13,26 @@ public class Recipes {
     enum Drink {
 
 
-        ESPRESSO            (1, 1, 0, 0,1),
-        AMERICANO           (2, 3, 0, 0,2),
-        AMERICANOWITHMILK   (2, 3, 3, 0,3),
-        LATE                (1, 1, 3, 1,4),
-        HOTWATER            (0, 1, 0, 0,5);
+        ESPRESSO            (1, 1, 0, 0,1,"Espresso"),
+        AMERICANO           (2, 3, 0, 0,2,"Americano"),
+        AMERICANOWITHMILK   (2, 3, 3, 0,3,"Americano with milk"),
+        LATE                (1, 1, 3, 1,4,"Late"),
+        HOTWATER            (0, 1, 0, 0,5,"Hot water");
 
         private final int coffee;
         private final int water;
         private final int milk;
         private final int sugar;
         private final int drinkType;
+        private final String drinkName;
 
-        Drink(int coffee, int water, int milk, int sugar, int drinkType) {
+        Drink(int coffee, int water, int milk, int sugar, int drinkType, String drinkName) {
             this.coffee = coffee;
             this.water = water;
             this.milk = milk;
             this.sugar = sugar;
             this.drinkType = drinkType;
+            this.drinkName = drinkName;
         }
 
         public static Drink getDrinkByType(int type) {
@@ -61,6 +63,10 @@ public class Recipes {
 
         public int getDrinkType() {
             return drinkType;
+        }
+
+        public String getDrinkName() {
+            return drinkName;
         }
     }
 

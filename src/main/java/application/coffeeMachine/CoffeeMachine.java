@@ -8,39 +8,41 @@ public class CoffeeMachine {
 
 
         boolean statusOK = true;
-        while (statusOK){
+        while (statusOK) {
             Scanner scanner = new Scanner(System.in);
             int selection = scanner.nextInt();
-
             Recipes.Drink drink = Recipes.Drink.getDrinkByType(selection);
-            if (drink == null){
+
+            if (drink == null) {
                 System.out.println("Wrong Drink Type");
             } else {
                 statusOK = CoffeeMaker.prepareDrink(drink);
-                System.out.println(CoffeeMaker.coffeeTankCapacity);
-                System.out.println(CoffeeMaker.waterTankCapacity);
-                System.out.println(CoffeeMaker.milkTankCapacity);
-                System.out.println(CoffeeMaker.trashTankCapacity);
-                System.out.println("__________________________");
-                System.out.println("You drink: "+ drink + " Is ready. Please, enjoy");
+                System.out.println("You drink: " + drink.getDrinkName() + " Is ready. Please, enjoy");
+                int selectionRepeat = getSelectionRepeat();
 
-                System.out.println("__________________________");
-                SelectYourDrink();
-
+                if(selectionRepeat == 1){
+                    SelectYourDrink();
+                } else {
+                    break;
+                }
             }
         }
+    }
 
-
-
-
+    private static int getSelectionRepeat() {
+        System.out.println("__________________________");
+        Scanner scannerRepeat = new Scanner(System.in);
+        System.out.println("Another drink?");
+        System.out.println("To continue press - 1; To exit press 0");
+        return scannerRepeat.nextInt();
     }
 
     private static void SelectYourDrink() {
-        System.out.println("For 'Espresso' press - 1" );
-        System.out.println("For 'Americano' press - 2" );
-        System.out.println("For 'Americano With Milk' press - 3" );
-        System.out.println("For 'Late' press - 4" );
-        System.out.println("For 'Hot Water' press - 5" );
+        System.out.println("For 'Espresso' press - 1");
+        System.out.println("For 'Americano' press - 2");
+        System.out.println("For 'Americano With Milk' press - 3");
+        System.out.println("For 'Late' press - 4");
+        System.out.println("For 'Hot Water' press - 5");
         System.out.println("__________________________");
         System.out.println("Select your drink and press ENTER:");
     }
