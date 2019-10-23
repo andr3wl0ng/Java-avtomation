@@ -28,15 +28,11 @@ public class FileReader {
 
 public class FileReader {
     public static void main(String[] args) {
-
-
         try {
-            BufferedReader reader = new BufferedReader(
-                    new java.io.FileReader("C:\\Users\\Users\\AndrewDovgiy\\Desktop\\lessonReader.txt"));
+            BufferedReader reader = new BufferedReader(new java.io.FileReader("C:\\Users\\Andrew\\Desktop\\lessonReader.txt"));
             String line;
-
             while ((line = reader.readLine()) != null) {
-                System.out.println("line");
+                System.out.println(line);
             }
             reader.close();
         } catch (IOException e){

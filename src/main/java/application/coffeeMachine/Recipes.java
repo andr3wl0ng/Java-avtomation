@@ -9,9 +9,7 @@ public class Recipes {
      * index 3 = sugar
      */
 
-
     enum Drink {
-
 
         ESPRESSO            (1, 1, 0, 0,1,"Espresso"),
         AMERICANO           (2, 3, 0, 0,2,"Americano"),
@@ -48,23 +46,18 @@ public class Recipes {
         public int getCoffee() {
             return coffee;
         }
-
         public int getWater() {
             return water;
         }
-
         public int getMilk() {
             return milk;
         }
-
         public int getSugar() {
             return sugar;
         }
-
         public int getDrinkType() {
             return drinkType;
         }
-
         public String getDrinkName() {
             return drinkName;
         }

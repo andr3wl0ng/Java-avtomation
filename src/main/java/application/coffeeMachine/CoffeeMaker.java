@@ -8,14 +8,12 @@ public class CoffeeMaker {
     public static int sugarTankCapacity     = 10;
     public static int trashTankCapacity     = 10;
 
-
-
-    /**
+    /*********************
      * index 0 = coffee
      * index 1 = water
      * index 2 = milk
      * index 3 = sugar
-     */
+     *********************/
 
     public static boolean prepareDrink(Recipes.Drink drink) {
 
