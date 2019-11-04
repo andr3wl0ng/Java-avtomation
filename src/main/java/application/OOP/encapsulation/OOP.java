@@ -1,4 +1,4 @@
-package application.OOP;
+package application.OOP.encapsulation;
 
 public class OOP {
     public String public_string;
