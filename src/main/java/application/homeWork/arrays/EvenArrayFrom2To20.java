@@ -1,4 +1,4 @@
-package application.homeWork;
+package application.homeWork.arrays;
 
 /*
 Создайте массив из всех чётных чисел от 2 до 20

@@ -1,4 +1,4 @@
-package application.homeWork;
+package application.homeWork.arrays;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package application.homeWork;
+package application.homeWork.arrays;
 
 /*
 Создайте массив из всех нечётных чисел от 1 до 99,

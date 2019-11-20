@@ -1,4 +1,4 @@
-package application.homeWork;
+package application.homeWork.arrays;
 
 /*
 Создайте массив из 15 случайных целых чисел из отрезка [0;9].
