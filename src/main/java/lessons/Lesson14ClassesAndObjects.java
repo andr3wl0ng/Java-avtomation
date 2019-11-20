@@ -3,7 +3,7 @@ package lessons;
 public class Lesson14ClassesAndObjects {
     public static void main(String[] args) {
         Person person1 = new Person();
-        person1.setName("Max");
+        person1.setName(null);
         person1.setAge(22);
       //  person1.speak();
 
@@ -23,7 +23,7 @@ class Person {
     }
 
     public void setName(String name) {
-        if (name.isEmpty()){
+        if (name == null || name.isEmpty()){
             System.out.println("empty string");
         } else {
             this.name = name;
