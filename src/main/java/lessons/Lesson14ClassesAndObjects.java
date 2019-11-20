@@ -5,24 +5,22 @@ public class Lesson14ClassesAndObjects {
         Person person1 = new Person();
         person1.name = "Andrew";
         person1.age = 20;
-        person1.sex = true;
-        System.out.println("My name is "+ person1.name +"and my age is" + person1.age);
+        person1.speak();
 
         Person person2 = new Person();
-        person1.name = "Dante";
-        person1.age = 21;
-        person1.sex = false;
-        System.out.println("My name is "+ person2.name +"and my age is" + person2.age);
+        person2.name = "Dante";
+        person2.age = 21;
+        person2.speak();
     }
 }
 
 class Person{
-    // classes has two things
-    // data(fields)
-    // moves that he can do(methods)
-
     String name;
     int age;
-    boolean sex;
+
+    void speak(){
+        System.out.println("My name is, "+ name + "and my age is " + age);
+    }
+    void
 
 }
