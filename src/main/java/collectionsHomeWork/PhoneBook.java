@@ -22,7 +22,11 @@ public class PhoneBook {
             System.out.println("insert category name: ");
             Scanner s = new Scanner(System.in);
             String categoryName = s.next();
-        categories.putIfAbsent(categoryName, new HashMap<>()).put(s.next(), s.nextInt());
+
+
+           Map<String, Integer> phones = categories.putIfAbsent(categoryName, new HashMap<>());
+           // categories.putIfAbsent(categoryName, new HashMap<>()).put(s.next(), s.nextInt());
+
         }
         System.out.println(categories);
     }
